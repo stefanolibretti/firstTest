@@ -1,0 +1,303 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-01 14:53:32 +0100
+Connecting to database specified by database.yml
+
+PGError (fe_sendauth: no password supplied
+):
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `connect'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__238004434__call__698133751__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.4ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (111.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (87.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (371.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateCustomers (20130228081135)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (46.9ms)[0m  CREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "address" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130228081135')[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (2.9ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"customers"'::regclass
+
+  [1m[36m (2.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'customers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-01 15:19:24 +0100
+
+PGError (fe_sendauth: no password supplied
+):
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `connect'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/model_schema.rb:308:in `clear_cache!'
+  activerecord (3.2.8) lib/active_record/railtie.rb:97:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:440:in `_run__110388619__prepare__698133751__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-01 15:23:44 +0100
+Connecting to database specified by database.yml
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (23.4ms)
+Compiled customer.css  (25ms)  (pid 2232)
+Compiled customers.css  (5ms)  (pid 2232)
+Compiled scaffolds.css  (16ms)  (pid 2232)
+Compiled welcome.css  (5ms)  (pid 2232)
+Compiled application.css  (180ms)  (pid 2232)
+Compiled jquery.js  (3ms)  (pid 2232)
+Compiled jquery_ujs.js  (0ms)  (pid 2232)
+Compiled customer.js  (586ms)  (pid 2232)
+Compiled customers.js  (221ms)  (pid 2232)
+Compiled welcome.js  (239ms)  (pid 2232)
+Compiled application.js  (1274ms)  (pid 2232)
+Completed 200 OK in 1795ms (Views: 1793.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/customer.css?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /customer.css - 200 OK (2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /customers.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /welcome.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/customer.js?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /customer.js - 200 OK (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /customers.js - 200 OK (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /welcome.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-01 15:23:47 +0100
+Served asset /application.js - 200 OK (11ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2013-03-01 15:23:49 +0100
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (1.0ms)[0m  [1mSELECT "customers".* FROM "customers" [0m
+  Rendered customers/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 187ms (Views: 15.6ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2013-03-01 15:23:50 +0100
+Processing by CustomersController#new as HTML
+  Rendered customers/_form.html.erb (8.8ms)
+  Rendered customers/new.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 56ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2013-03-01 15:24:09 +0100
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"13+0oc84z3yirYc36Z7/lZ6AizghFEhoxeQQMK7Xda0=", "customer"=>{"name"=>"Stefano", "address"=>"Libretti"}, "commit"=>"Create Customer"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (94.7ms)[0m  [1mINSERT INTO "customers" ("address", "created_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["address", "Libretti"], ["created_at", Fri, 01 Mar 2013 14:24:09 UTC +00:00], ["name", "Stefano"], ["updated_at", Fri, 01 Mar 2013 14:24:09 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/customers/1
+Completed 302 Found in 102ms (ActiveRecord: 95.7ms)
+
+
+Started GET "/customers/1" for 127.0.0.1 at 2013-03-01 15:24:09 +0100
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (2.9ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 14.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/customers/1/edit" for 127.0.0.1 at 2013-03-01 15:24:12 +0100
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (0.0ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered customers/_form.html.erb (2.9ms)
+  Rendered customers/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/1" for 127.0.0.1 at 2013-03-01 15:24:13 +0100
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.0ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered customers/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2013-03-01 15:24:16 +0100
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.0ms)[0m  SELECT "customers".* FROM "customers" 
+  Rendered customers/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/1/edit" for 127.0.0.1 at 2013-03-01 15:24:17 +0100
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.0ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered customers/_form.html.erb (2.9ms)
+  Rendered customers/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2013-03-01 15:24:21 +0100
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.0ms)[0m  SELECT "customers".* FROM "customers" 
+  Rendered customers/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.0ms)
